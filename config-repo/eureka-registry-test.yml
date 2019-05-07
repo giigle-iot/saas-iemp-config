@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: eureka-registry
+  cloud:
+    config:
+      uri: http://config:8010
+      fail-fast: true
