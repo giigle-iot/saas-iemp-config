@@ -3,7 +3,5 @@ spring:
     name: eureka-registry
   cloud:
     config:
-      uri: http://config:8888
+      uri: http://config:8010
       fail-fast: true
-      password: 123456
-      username: user
