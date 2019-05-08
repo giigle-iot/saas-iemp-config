@@ -1,1 +1,12 @@
+spring:
+  application:
+    name: smart-product-service
+    
+server:
+  context-path: /smartProduct
+  port: 8140
+
+
+
+
 

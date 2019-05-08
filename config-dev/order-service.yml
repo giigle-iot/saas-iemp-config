@@ -1,1 +1,12 @@
+spring:
+  application:
+    name: order-service
+    
+server:
+  context-path: /order
+  port: 8120
+
+
+
+
 

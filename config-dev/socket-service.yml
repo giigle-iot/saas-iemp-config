@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: socket-service
+    
+server:
+  context-path: /socket
+  port: 8150
+
+
+
+
+

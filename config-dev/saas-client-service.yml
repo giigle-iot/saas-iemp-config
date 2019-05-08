@@ -1,1 +1,12 @@
+spring:
+  application:
+    name: saas-client-service
+    
+server:
+  context-path: /saasClient
+  port: 8130
+
+
+
+
 

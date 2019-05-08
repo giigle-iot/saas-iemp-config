@@ -1,1 +1,10 @@
+spring:
+  application:
+    name: data-association-service
+    
+server:
+  context-path: /dataAssociation
+  port: 8080
+
+
 

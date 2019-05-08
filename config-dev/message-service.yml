@@ -1,1 +1,11 @@
+spring:
+  application:
+    name: message-service
+    
+server:
+  context-path: /message
+  port: 8110
+
+
+
 

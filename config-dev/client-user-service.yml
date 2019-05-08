@@ -1,1 +1,8 @@
+spring:
+  application:
+    name: client-user-service
+    
+server:
+  context-path: /clientUser
+  port: 8060
 
