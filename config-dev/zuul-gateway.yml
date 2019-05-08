@@ -100,3 +100,6 @@ zuul:
       serviceId: socket-service
       stripPrefix: false
       sensitiveHeaders: 
+      
+interface:
+  timeout: 60
