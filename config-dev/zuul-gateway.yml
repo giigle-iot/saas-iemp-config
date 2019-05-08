@@ -5,6 +5,11 @@ management:
   security:
     enabled: false
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/
+    
 hystrix:
   command:
     default:
