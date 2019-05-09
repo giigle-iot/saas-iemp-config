@@ -1,7 +1,12 @@
 spring:
   application:
     name: app-encapsulation-service
-    
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/
+      
 server:
   context-path: /appEncapsulation
   port: 8040
