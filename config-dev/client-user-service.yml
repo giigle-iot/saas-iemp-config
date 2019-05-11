@@ -1,7 +1,10 @@
 spring:
   application:
     name: client-user-service
-    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
 server:
   context-path: /clientUser
   port: 8060

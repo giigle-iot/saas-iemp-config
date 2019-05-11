@@ -1,7 +1,10 @@
 spring:
   application:
     name: socket-service
-    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
 server:
   context-path: /socket
   port: 8150

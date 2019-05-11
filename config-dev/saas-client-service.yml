@@ -1,7 +1,10 @@
 spring:
   application:
     name: saas-client-service
-    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
 server:
   context-path: /saasClient
   port: 8130

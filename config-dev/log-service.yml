@@ -1,7 +1,10 @@
 spring:
   application:
     name: log-service
-    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
 server:
   context-path: /log
   port: 8100

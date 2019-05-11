@@ -1,7 +1,10 @@
 spring:
   application:
     name: order-service
-    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
 server:
   context-path: /order
   port: 8120
