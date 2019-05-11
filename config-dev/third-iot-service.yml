@@ -1,8 +1,8 @@
 spring:
   application:
-    name: socket-service
+    name: third-iot-service
   datasource:
-    url: jdbc:mysql://localhost:3306/giigle-iot-socket
+    url: jdbc:mysql://localhost:3306/giigle-iot-third-iot
     username: root
     password: 
     max-active: 100
@@ -17,11 +17,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8020/eureka/    
-      
 server:
-  context-path: /socket
-  port: 8150
-
+  context-path: /thirdIot
+  port: 8090
 
 
 
