@@ -1,12 +1,14 @@
 spring:
   application:
-    name: data-association-service
+    name: iemp-encapsulation-service
+    
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8020/eureka/    
+      
 server:
-  context-path: /dataAssociation
+  context-path: /iempEncapsulation
   port: 8080
 
 
