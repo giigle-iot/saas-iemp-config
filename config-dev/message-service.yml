@@ -25,6 +25,10 @@ server:
 message:
   accessKeyId: LTAIq4mhaAdxsgfk
   accessKeySecret: jZe7bjLnHWKWx0N2MEjyn8dSFTchZU
+  
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.message.domain
 
 
 
