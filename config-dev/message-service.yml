@@ -21,6 +21,10 @@ eureka:
 server:
   context-path: /message
   port: 8110
+  
+message:
+  accessKeyId: LTAIq4mhaAdxsgfk
+  accessKeySecret: jZe7bjLnHWKWx0N2MEjyn8dSFTchZU
 
 
 
