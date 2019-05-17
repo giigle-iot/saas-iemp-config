@@ -30,6 +30,11 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.giigle.message.domain
 
+jiguang:
+  push:
+    appKey: 9a6604c0c06a6a5de0638d10
+    masterSecret: a6bd615de1c9290e458aa9d8
+
 
 
 
