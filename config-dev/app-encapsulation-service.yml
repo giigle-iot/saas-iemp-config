@@ -10,3 +10,7 @@ eureka:
 server:
   context-path: /appEncapsulation
   port: 8040
+
+ribbon:  
+  ReadTimeout: 50000  
+  ConnectTimeout: 50000
