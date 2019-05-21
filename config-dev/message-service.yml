@@ -37,6 +37,6 @@ jiguang:
 
 verify:
   code:
-    valid
+    valid:
       time: 300
 
