@@ -20,3 +20,7 @@ server:
   context-path: /clientUser
   port: 8060
 
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.message.domain
+
