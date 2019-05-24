@@ -14,3 +14,16 @@ server:
 ribbon:  
   ReadTimeout: 50000  
   ConnectTimeout: 50000
+
+#静态资源地址
+static:
+  resource:
+    server:
+      ssh: #上传图片
+        ip: 119.3.24.105
+        port: 22
+        user: root
+        pwd: jujiang12!@
+      ip: 119.3.24.105
+      port: 80
+      destinationPath: /home/giigle/img
