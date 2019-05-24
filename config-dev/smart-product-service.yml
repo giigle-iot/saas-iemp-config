@@ -24,7 +24,7 @@ server:
   
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.giigle.saas.client.domain
+  type-aliases-package: com.giigle.smart.product.domain
 
 
 
