@@ -21,6 +21,10 @@ eureka:
 server:
   context-path: /smartProduct
   port: 8140
+  
+ mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.saas.client.domain
 
 
 
