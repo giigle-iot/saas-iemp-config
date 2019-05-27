@@ -21,3 +21,7 @@ eureka:
 server:
   context-path: /app
   port: 8050
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.app.domain
