@@ -22,5 +22,5 @@ server:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.giigle.message.domain
+  type-aliases-package: com.giigle.client.user.domain
 
