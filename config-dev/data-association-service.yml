@@ -2,7 +2,7 @@ spring:
   application:
     name: data-association-service
   datasource:
-    url: jdbc:mysql://localhost:3306/giigle-iot-client-user
+    url: jdbc:mysql://localhost:3306/data-association-service
     username: root
     password: 
     max-active: 100
