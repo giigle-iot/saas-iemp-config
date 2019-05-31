@@ -32,8 +32,8 @@ mybatis:
 
 jiguang:
   push:
-    appKey: 9a6604c0c06a6a5de0638d10
-    masterSecret: a6bd615de1c9290e458aa9d8
+    appKey: 08e30ee8395a8d801daa6e8f
+    masterSecret: 183fa908e6e82bf76edf70ab
 
 verify:
   code:
