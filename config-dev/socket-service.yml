@@ -20,7 +20,7 @@ eureka:
       
 server:
   context-path: /socket
-  port: 8150
+  port: 8151
 
 socket:
   service:
