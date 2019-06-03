@@ -22,7 +22,32 @@ server:
   context-path: /socket
   port: 8150
 
+socket:
+  service:
+    address: http://112.124.200.187:1234/socket/
+    name: socketService1 #不同服务名称保证不一致
 
+netty:
+  server:
+    port: 9091
+  heart:
+    timeout: 30
+  command:
+    valid:
+      time: 20
+
+spring:
+  redis:
+    database: 1
+    host: 127.0.0.1
+    port: 3789
+    password: giigle!@#
+    pool:
+      max-idle: 10
+      min-idle: 5
+      max-active: 100
+      max-wait: -1
+    timeout: 5000
 
 
 
