@@ -20,7 +20,7 @@ eureka:
       
 server:
   context-path: /socket
-  port: 8151
+  port: 8150
 
 socket:
   service:
@@ -29,7 +29,7 @@ socket:
 
 netty:
   server:
-    port: 9091
+    port: 8151
   heart:
     timeout: 30
   command:
