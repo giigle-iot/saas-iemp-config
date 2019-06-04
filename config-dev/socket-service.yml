@@ -1,17 +1,17 @@
 spring:
   application:
     name: socket-service
-  datasource:
-    url: jdbc:mysql://localhost:3306/giigle-iot-socket
-    username: root
-    password: 
-    max-active: 100
-    driver-class-name: com.mysql.jdbc.Driver
-    time-between-eviction-runs-millis: 60000
-    min-evictable-idle-time-millis: 18000000
-    max-wait: 60000
-    test-while-idle: true
-    validation-query: select 1
+  redis:
+    database: 1
+    host: 119.3.24.105
+    port: 6379
+    password: giigle123
+    pool:
+      max-idle: 10
+      min-idle: 5
+      max-active: 100
+      max-wait: -1
+    timeout: 5000
     
 eureka:
   client:
@@ -22,6 +22,19 @@ server:
   context-path: /socket
   port: 8150
 
+socket:
+  service:
+    address: http://112.124.200.187:1234/socket/
+    name: socketService1 #不同服务名称保证不一致
+
+netty:
+  server:
+    port: 8151
+  heart:
+    timeout: 30
+  command:
+    valid:
+      time: 20
 
 
 
