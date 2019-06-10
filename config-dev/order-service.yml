@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/giigle-iot-order
     username: root
-    password: 121121
+    password: 
     max-active: 100
     driver-class-name: com.mysql.jdbc.Driver
     time-between-eviction-runs-millis: 60000
