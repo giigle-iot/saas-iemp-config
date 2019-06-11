@@ -27,4 +27,4 @@ mybatis:
   type-aliases-package: com.giigle.app.domain
   
 image:
- get-url-prefix: http://127.0.0.1/
+  get-url-prefix: http://119.3.24.105/
