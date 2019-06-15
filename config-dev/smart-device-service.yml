@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: smart-device-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/giigle-iot-smart-device
+    username: root
+    password: 121121
+    max-active: 100
+    driver-class-name: com.mysql.jdbc.Driver
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 18000000
+    max-wait: 60000
+    test-while-idle: true
+    validation-query: select 1
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
+      
+server:
+  context-path: /smartDevice
+  port: 8141
+  
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.smart.device.domain
+  
+image:
+  get-url-prefix: http://127.0.0.1/
+
+
+
+
+
