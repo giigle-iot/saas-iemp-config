@@ -20,16 +20,8 @@ eureka:
       
 server:
   context-path: /smartDevice
-  port: 8141
-  
+  port: 8160
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.giigle.smart.device.domain
-  
-image:
-  get-url-prefix: http://127.0.0.1/
-
-
-
-
-

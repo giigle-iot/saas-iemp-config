@@ -25,3 +25,6 @@ server:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.giigle.app.domain
+  
+image:
+  get-url-prefix: http://119.3.24.105/
