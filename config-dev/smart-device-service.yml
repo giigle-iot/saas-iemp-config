@@ -41,3 +41,7 @@ elastic:
       # listener: com.cxytiandi.job.core.MessageElasticJobListener
       # jobExceptionHandler: com.cxytiandi.job.core.CustomJobExceptionHandler
       disabled: false
+
+    zk:
+      serverLists: localhost:2181
+      namespace: smart-device-service
