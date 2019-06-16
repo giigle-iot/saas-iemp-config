@@ -1,6 +1,10 @@
 spring:
   application:
     name: smart-device-service
+  jpa:
+    hibernate:
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
   datasource:
     url: jdbc:mysql://localhost:3306/giigle-iot-smart-device
     username: root
