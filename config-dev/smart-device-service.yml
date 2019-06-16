@@ -25,3 +25,19 @@ server:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.giigle.smart.device.domain
+
+elastic:
+  job:
+    genSceneTimingJob:
+      cron: 10 0 0 * * ?
+      overwrite: true
+      shardingTotalCount: 1
+      # shardingItemParameters: 0=1,1=1
+      # jobParameter: test
+      failover: true
+      misfire: true
+      description: 定时生成sceneTiming
+      # monitorExecution: false
+      # listener: com.cxytiandi.job.core.MessageElasticJobListener
+      # jobExceptionHandler: com.cxytiandi.job.core.CustomJobExceptionHandler
+      disabled: false
