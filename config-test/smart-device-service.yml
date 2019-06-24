@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/giigle-iot-smart-device
     username: root
-    password: oir!uEw8ds8fJLgj
+    password: giigle145lkdslfk9
     max-active: 100
     driver-class-name: com.mysql.jdbc.Driver
     time-between-eviction-runs-millis: 60000
