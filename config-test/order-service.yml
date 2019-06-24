@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/giigle-iot-order
+    username: root
+    password: oir!uEw8ds8fJLgj
+    max-active: 100
+    driver-class-name: com.mysql.jdbc.Driver
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 18000000
+    max-wait: 60000
+    test-while-idle: true
+    validation-query: select 1
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
+      
+server:
+  context-path: /order
+  port: 8120
+
+pingxx:
+  appId: app_1Gqj58ynP0mHeX1q
+  appKey: sk_test_ibbTe5jLGCi5rzfH4OqPW9KC
+  privateKey: -----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDHYyS3FwoESp1h\nGLYiBhy6k9Ag3lzGCIEvm50IIEkE0Ftc9qq44TWqyl+EHUpTMdcBOcI42JLO5stw\nFOfCLa3PQStEJ4llIRFEKlsrHh67pvWd5RNaSBrvGlnFY40S+SZmjk2WF/h9dE9R\nic79t0YI0alD8dIl9Yu3OaEKo7VonBWFwOYMxjPhtORlq+EUF1XJd//yftQrKWTT\nd7KaUonWzBCl4VzFop/OyTWYlTuZz3eYJaNpH5VaQ1vDgBAcPIeBvMf7NgBHMKW6\nLLmFd2LEYQ/6I7hkGTjysSzWEpO8bPWT6OEsJ2R2kFGOrSkr+G2MDcJ7ykXYAmz5\n+A3plS6ZAgMBAAECggEAVrgwR9GlcahiOtDcpn+yDxQq+aC9CQS561LrQZWJLKbS\nleRS7IZHKTlLwdJbeUO8F7RfXQoVEBghc2YkRrhHWFUn1ES95VY0hElHzcET7Nn5\nCeuQNzwVOtljIg7iVNY4dXJ/HEDguu/Tb8tYU9FajItj60FJ/WiGk/JksJPzWsOC\nVPVniy9fTbTLy1e+dCpCI6OXirtm7hvbodRNDjree0wSEzm7vL0wVzEZFo6kX+AB\nGUwaoO7pPyH+hgyI5Iuhc65NHsHzTJpf8yNFl9QGhkxvm2Ff2oEtDt1idOTBrHB6\ntg+ti9Ctb2+2yzBnk14hsSYJnKitR7wM6ZCFPX4eYQKBgQD+JAREeFkodec/SC+G\nX+4Q4Y68uMPkfUPrMKXM4cyY5wgXk64RBvRVxIxX7x6Y3tIKn9v8tWAprbsyVr15\neb4RcAFEVwjuoZixhd9sIPsRhfdNolKn/fSPIsHL4ywcJMSIt7KVKHuQeqBNHy0o\n0PxQjNej1ozsmrAWqV55cbKHswKBgQDI2JQRTPIEC/2y6LdmBVhGJW9OKWTYdVNj\nq7rX+Yw4uxOtfd5hBqpvgZEklKEk72aazFdEcERlAm9SqoX09qk6zK/wcq4Xn5Q/\nqy8ecmjuyf2AK9X+HUdMerMVxhK9RpeevKYP/RO2F/wIN64anlQVYygVkXXgdOvW\nhBE4YABKgwKBgDRtmbPGYB5ItHwJmERQZfx1i8zDESaB8RED6DBsJJkmkDTM8ovw\ns1c+RPWfDuDalto6QFfR0xTGEmhAHLaCtwNB6AEBM4aHL8jvpTfZVfI3gN0zL3oY\nmestcG1vYBouO504yE6dG2Ci6479b4OMGYFEjPfvuwLUpp8GMcc7/WihAoGANCp8\nmtm/ammq5VMof2kX+nAyrrx1ovsmQ5cRGpOIZhvBCqjMn6rZjci7aCLqj+tWXRKC\nABagzROK0o/T50JBxjHv6KYArcYW/Up7HI9ezdbM7wNzu2LjZ+veo+MkbuDs9J/P\nCgwTmJI2NfQwVl2VPVDZ0nBLi5cSwk7fIiNdL/0CgYEAtECmC1QDs53Di2MIsa/F\ne4sWfJGSDqEWqhcA/aPwf1skM6VJJXBBMV1qFtwgO1AlLnu9dQYra6ylsUoubVYI\nXM9XK7EMhbqi57+Q75jHFTc0DnzOTyho5Gp4Ddi8dztmZGNWdWTGdeMqh+svqMXk\nD6VdJeddyGu/Zlgj7Wk6whU=\n-----END PRIVATE KEY-----\n
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.order.domain
+
+
+

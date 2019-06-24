@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: app-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/giigle-iot-app
+    username: root
+    password: oir!uEw8ds8fJLgj
+    max-active: 100
+    driver-class-name: com.mysql.jdbc.Driver
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 18000000
+    max-wait: 60000
+    test-while-idle: true
+    validation-query: select 1
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
+      
+server:
+  context-path: /app
+  port: 8050
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.app.domain
+  
+image:
+  get-url-prefix: http://119.3.24.105/
