@@ -21,6 +21,12 @@ server:
   context-path: /thirdIot
   port: 8090
 
-
-
-
+ali:
+  iot:
+    accessKey: LTAIq4mhaAdxsgfk
+    accessSecret: jZe7bjLnHWKWx0N2MEjyn8dSFTchZU
+    regionId: cn-shanghai
+    uid: 1201724212307361
+    endPoint: https://${ali.iot.uid}.iot-as-http2.${ali.iot.regionId}.aliyuncs.com
+    domain: cn-shanghai
+    version: 2018-01-20
