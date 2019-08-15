@@ -8,7 +8,7 @@ eureka:
       defaultZone: http://localhost:8020/eureka/    
       
 server:
-  context-path: /iempEncapsulation/
+  context-path: /
   port: 8081
 
 
