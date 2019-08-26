@@ -25,7 +25,10 @@ server:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.giigle.smart.device.domain
-
+  
+geolite:
+  db:
+    path: D:/MaxMind GeoLite/GeoLite2-City_20190122/GeoLite2-City.mmdb
 # elastic:
 #   job:
 #     genSceneTimingJob:
