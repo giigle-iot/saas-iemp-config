@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: iemp-encapsulation-service
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
+      
+server:
+  context-path: /
+  port: 8081
+
+
+#静态资源地址
+static:
+  resource:
+    server:
+      ssh: #上传图片
+        ip: 119.3.24.105
+        port: 22
+        user: root
+        pwd: oir!uEw8ds8fJLgj
+      ip: 119.3.24.105
+      port: 80
+      destinationPath: /home/giigle/img

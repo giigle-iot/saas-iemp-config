@@ -1,0 +1,105 @@
+server:
+  port: 8030
+  
+management:
+  security:
+    enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/
+    
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+  
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+   
+  routes:
+    app-encapsulation-service:
+      path: /appEncapsulation/**
+      serviceId: app-encapsulation-service
+      stripPrefix: false
+      sensitiveHeaders: 
+    
+    app-service:
+      path: /app/**
+      serviceId: app-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    client-user-service: 
+      path: /clientUser/**
+      serviceId: client-user-service
+      stripPrefix: false
+      sensitiveHeaders: 
+    
+    data-association-service:
+      path: /dataAssociation/**
+      serviceId: data-association-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    iemp-encapsulation-service:
+      path: /iempEncapsulation/**
+      serviceId: iemp-encapsulation-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    iot-service:
+      path: /iot/**
+      serviceId: iot-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    log-service:
+      path: /log/**
+      serviceId: log-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    message-service:
+      path: /message/**
+      serviceId: message-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    order-service:
+      path: /order/**
+      serviceId: order-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    saas-client-service:
+      path: /saasClient/**
+      serviceId: saas-client-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    smart-product-service:
+      path: /smartProduct/**
+      serviceId: smart-product-service
+      stripPrefix: false
+      sensitiveHeaders: 
+
+    socket-service:
+      path: /socket/**
+      serviceId: socket-service
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+interface:
+  timeout: 6000

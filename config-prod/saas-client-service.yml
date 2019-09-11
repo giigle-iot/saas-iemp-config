@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: saas-client-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/giigle-iot-saas-client
+    username: root
+    password: 
+    max-active: 100
+    driver-class-name: com.mysql.jdbc.Driver
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 18000000
+    max-wait: 60000
+    test-while-idle: true
+    validation-query: select 1
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
+      
+server:
+  context-path: /saasClient
+  port: 8130
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.saas.client.domain
+
+
+
+

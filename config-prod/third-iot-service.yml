@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: third-iot-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/giigle-iot-third-iot
+    username: root
+    password: 
+    max-active: 100
+    driver-class-name: com.mysql.jdbc.Driver
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 18000000
+    max-wait: 60000
+    test-while-idle: true
+    validation-query: select 1
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
+server:
+  context-path: /thirdIot
+  port: 8090
+
+ali:
+  iot:
+    accessKey: LTAIq4mhaAdxsgfk
+    accessSecret: jZe7bjLnHWKWx0N2MEjyn8dSFTchZU
+    regionId: cn-shanghai
+    uid: 1201724212307361
+    endPoint: https://${ali.iot.uid}.iot-as-http2.${ali.iot.regionId}.aliyuncs.com
+    domain: cn-shanghai
+    version: 2018-01-20

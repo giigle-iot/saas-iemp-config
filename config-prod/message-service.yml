@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: message-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/giigle-iot-message
+    username: root
+    password: 
+    max-active: 100
+    driver-class-name: com.mysql.jdbc.Driver
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 18000000
+    max-wait: 60000
+    test-while-idle: true
+    validation-query: select 1
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
+      
+server:
+  context-path: /message
+  port: 8110
+  
+message:
+  accessKeyId: LTAIq4mhaAdxsgfk
+  accessKeySecret: jZe7bjLnHWKWx0N2MEjyn8dSFTchZU
+  
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.giigle.message.domain
+
+jiguang:
+  push:
+    appKey: 08e30ee8395a8d801daa6e8f
+    masterSecret: 183fa908e6e82bf76edf70ab
+
+verify:
+  code:
+    valid:
+      time: 300
+

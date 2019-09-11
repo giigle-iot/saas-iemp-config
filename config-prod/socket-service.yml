@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: socket-service
+  redis:
+    database: 1
+    host: 119.3.24.105
+    port: 6379
+    password: giigle123
+    pool:
+      max-idle: 10
+      min-idle: 5
+      max-active: 100
+      max-wait: -1
+    timeout: 5000
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8020/eureka/    
+      
+server:
+  context-path: /socket
+  port: 8150
+
+socket:
+  service:
+    address: http://112.124.200.187:1234/socket/
+    name: socketService1 #不同服务名称保证不一致
+
+netty:
+  server:
+    port: 8151
+  heart:
+    timeout: 30
+  command:
+    valid:
+      time: 20
+
+
+
+
